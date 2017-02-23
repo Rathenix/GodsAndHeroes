@@ -6,12 +6,19 @@ using UnityEngine;
 public class GhUnit : Unit
 {
     public int MaxHitPoints;
+    public string DisplayName;
     public Color LeadingColor;
     public override void Initialize()
     {
         base.Initialize();
         transform.position += new Vector3(0, 0, -1);
         //GetComponent<Renderer>().material.color = LeadingColor;
+    }
+
+    public void OnUnitHighlighted(object sender, EventArgs e)
+    {
+        var unit = sender as GhUnit;
+        unit.GetComponent<Renderer>().material.color = LeadingColor + Color.green;
     }
 
     public override void MarkAsSelected()
@@ -32,8 +39,10 @@ public class GhUnit : Unit
 
     protected override void Defend(Unit other, int damage)
     {
+        var oldHP = HitPoints;
         base.Defend(other, damage);
-        GetComponentInChildren<HealthBar>().UpdateHealthBar();
+        var dmgDelta = oldHP - HitPoints;
+        GetComponentInChildren<HealthBar>().UpdateHealthBar(dmgDelta);
     }
  
     public override void MarkAsDestroyed()
@@ -63,7 +72,6 @@ public class GhUnit : Unit
 
     IEnumerator AttackMotion(Unit other)
     {
-        GetComponent<SpriteRenderer>.a
         var heading = other.transform.position - transform.position;
         var direction = heading / heading.magnitude;
         float startTime = Time.time;

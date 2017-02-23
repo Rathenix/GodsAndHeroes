@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d6fa71269f1aac44cb2bc817c00fa00e
-timeCreated: 1487750849
+timeCreated: 1487829097
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -44,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -77,10 +77,10 @@ TextureImporter:
       name: AirSoldierBattleSprite_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 33
-        width: 20
-        height: 24
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -90,10 +90,10 @@ TextureImporter:
       name: AirSoldierBattleSprite_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 32
-        width: 20
-        height: 23
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,10 +103,10 @@ TextureImporter:
       name: AirSoldierBattleSprite_2
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 14
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,10 +116,10 @@ TextureImporter:
       name: AirSoldierBattleSprite_3
       rect:
         serializedVersion: 2
-        x: 35
+        x: 32
         y: 0
-        width: 26
-        height: 24
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
