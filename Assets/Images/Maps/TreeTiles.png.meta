@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d5f0c5bb1e31ee3469aa6eef6baaa286
-timeCreated: 1487828496
+timeCreated: 1487908123
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -35,6 +35,10 @@ TextureImporter:
     21300056: TreeTiles_28
     21300058: TreeTiles_29
     21300060: TreeTiles_30
+    21300062: TreeTiles_31
+    21300064: TreeTiles_32
+    21300066: TreeTiles_33
+    21300068: TreeTiles_34
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -130,7 +134,7 @@ TextureImporter:
       name: TreeTiles_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 128
         width: 32
         height: 32
@@ -143,7 +147,7 @@ TextureImporter:
       name: TreeTiles_3
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 128
         width: 32
         height: 32
@@ -156,7 +160,7 @@ TextureImporter:
       name: TreeTiles_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 128
         width: 32
         height: 32
@@ -169,8 +173,8 @@ TextureImporter:
       name: TreeTiles_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 160
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -182,8 +186,8 @@ TextureImporter:
       name: TreeTiles_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 192
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -195,7 +199,7 @@ TextureImporter:
       name: TreeTiles_7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 96
         width: 32
         height: 32
@@ -208,7 +212,7 @@ TextureImporter:
       name: TreeTiles_8
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 96
         width: 32
         height: 32
@@ -221,7 +225,7 @@ TextureImporter:
       name: TreeTiles_9
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 96
         width: 32
         height: 32
@@ -234,7 +238,7 @@ TextureImporter:
       name: TreeTiles_10
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 96
         width: 32
         height: 32
@@ -247,7 +251,7 @@ TextureImporter:
       name: TreeTiles_11
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 96
         width: 32
         height: 32
@@ -260,8 +264,8 @@ TextureImporter:
       name: TreeTiles_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 160
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -273,8 +277,8 @@ TextureImporter:
       name: TreeTiles_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 192
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -286,7 +290,7 @@ TextureImporter:
       name: TreeTiles_14
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 64
         width: 32
         height: 32
@@ -299,7 +303,7 @@ TextureImporter:
       name: TreeTiles_15
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 64
         width: 32
         height: 32
@@ -312,7 +316,7 @@ TextureImporter:
       name: TreeTiles_16
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 64
         width: 32
         height: 32
@@ -325,7 +329,7 @@ TextureImporter:
       name: TreeTiles_17
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 64
         width: 32
         height: 32
@@ -338,7 +342,7 @@ TextureImporter:
       name: TreeTiles_18
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 64
         width: 32
         height: 32
@@ -351,8 +355,8 @@ TextureImporter:
       name: TreeTiles_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 160
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -364,8 +368,8 @@ TextureImporter:
       name: TreeTiles_20
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 192
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -377,7 +381,7 @@ TextureImporter:
       name: TreeTiles_21
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -390,7 +394,7 @@ TextureImporter:
       name: TreeTiles_22
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 32
         width: 32
         height: 32
@@ -403,7 +407,7 @@ TextureImporter:
       name: TreeTiles_23
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 32
         width: 32
         height: 32
@@ -416,7 +420,7 @@ TextureImporter:
       name: TreeTiles_24
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 32
         width: 32
         height: 32
@@ -429,7 +433,7 @@ TextureImporter:
       name: TreeTiles_25
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 32
         width: 32
         height: 32
@@ -442,8 +446,8 @@ TextureImporter:
       name: TreeTiles_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 160
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -455,8 +459,8 @@ TextureImporter:
       name: TreeTiles_27
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 192
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -468,7 +472,7 @@ TextureImporter:
       name: TreeTiles_28
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -481,7 +485,7 @@ TextureImporter:
       name: TreeTiles_29
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 0
         width: 32
         height: 32
@@ -494,7 +498,59 @@ TextureImporter:
       name: TreeTiles_30
       rect:
         serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreeTiles_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreeTiles_32
+      rect:
+        serializedVersion: 2
         x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreeTiles_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreeTiles_34
+      rect:
+        serializedVersion: 2
+        x: 192
         y: 0
         width: 32
         height: 32

@@ -8,6 +8,7 @@ public class GhUnit : Unit
     public int MaxHitPoints;
     public string DisplayName;
     public Color LeadingColor;
+    public HealthBar HealthBar;
     public override void Initialize()
     {
         base.Initialize();
@@ -42,7 +43,7 @@ public class GhUnit : Unit
         var oldHP = HitPoints;
         base.Defend(other, damage);
         var dmgDelta = oldHP - HitPoints;
-        GetComponentInChildren<HealthBar>().UpdateHealthBar(dmgDelta);
+        HealthBar.UpdateHealthBar(dmgDelta);
     }
  
     public override void MarkAsDestroyed()
