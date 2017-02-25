@@ -93,4 +93,12 @@ public class GhUnit : Unit
         }
         transform.position = Cell.transform.position + new Vector3(0, 0, -0.1f);
     }
+
+    public override bool IsUnitAttackable(Unit other, Cell sourceCell)
+    {
+        if (sourceCell.GetDistance(other.Cell) == AttackRange)
+            return true;
+
+        return false;
+    }
 }

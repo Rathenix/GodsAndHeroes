@@ -21,6 +21,7 @@ public class GuiController : MonoBehaviour {
         {
             unit.GetComponent<Unit>().UnitHighlighted += OnUnitHighlighted;
             unit.GetComponent<Unit>().UnitDehighlighted += OnUnitDehighlighted;
+            unit.GetComponent<Unit>().UnitDestroyed += OnUnitDestroyed;
         }
     }
 
@@ -42,6 +43,11 @@ public class GuiController : MonoBehaviour {
     }
 
     private void OnUnitDehighlighted(object sender, EventArgs e)
+    {
+        Destroy(_infoPanel);
+    }
+
+    private void OnUnitDestroyed(object sender, EventArgs e)
     {
         Destroy(_infoPanel);
     }
