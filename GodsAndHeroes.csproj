@@ -123,6 +123,7 @@
     <Compile Include="Assets\Scripts\TBS Core\UnitStateMarkedAsReachableEnemy.cs" />
     <Compile Include="Assets\Scripts\TBS Core\UnitStateMarkedAsSelected.cs" />
     <Compile Include="Assets\Scripts\TBS Core\UnitStateNormal.cs" />
+    <Compile Include="Assets\Scripts\TurnAlert.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
