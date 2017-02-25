@@ -11,9 +11,6 @@ public class GuiController : MonoBehaviour {
     public GameObject UnitsParent;
     public Canvas Canvas;
 
-    public HealthBar HealthBar;
-    private HealthBar _healthBar;
-    public Text DamageAlert;
     public GameObject InfoPanel;
     private GameObject _infoPanel;
 
@@ -24,13 +21,6 @@ public class GuiController : MonoBehaviour {
         {
             unit.GetComponent<Unit>().UnitHighlighted += OnUnitHighlighted;
             unit.GetComponent<Unit>().UnitDehighlighted += OnUnitDehighlighted;
-
-            _healthBar = Instantiate(HealthBar);
-            _healthBar.ParentUnit = unit.GetComponent<GhUnit>();
-            _healthBar.DamageAlert = DamageAlert;
-            _healthBar.Canvas = Canvas;
-            _healthBar.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(), false);
-            _healthBar.transform.GetComponent<RectTransform>().anchoredPosition = new Vector2(unit.transform.position.x, unit.transform.position.y + 0.6f);
         }
     }
 

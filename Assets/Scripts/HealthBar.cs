@@ -5,33 +5,31 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour {
 
-    private Image HealthAmount;
     public GhUnit ParentUnit;
     public Text DamageAlert;
     private Text _damageAlert;
-    public Canvas Canvas;
+    private Canvas Canvas;
 
     private void Start()
     {
-        HealthAmount = transform.GetComponentInChildren<Image>();
-        ParentUnit.HealthBar = this;
+        Canvas = GetComponentInParent<Canvas>();
     }
 
     private void Update()
     {
-        transform.GetComponent<RectTransform>().anchoredPosition = new Vector2(ParentUnit.transform.position.x, ParentUnit.transform.position.y + 0.6f);
+
     }
 
     public void UpdateHealthBar(int damage)
     {
-        HealthAmount.fillAmount = ParentUnit.HitPoints / ParentUnit.MaxHitPoints;
+        float fill = (float)ParentUnit.HitPoints / (float)ParentUnit.MaxHitPoints;
+        GetComponent<Image>().fillAmount = fill;
         StartCoroutine(ShowDamage(damage));
     }
 
     IEnumerator ShowDamage(int damage)
     {
         _damageAlert = Instantiate(DamageAlert);
-        _damageAlert.transform.position = new Vector3(transform.position.x + 0.2f, transform.position.y, transform.position.z);
         _damageAlert.text = damage.ToString();
         _damageAlert.GetComponent<RectTransform>().SetParent(Canvas.GetComponent<RectTransform>(), false);
 

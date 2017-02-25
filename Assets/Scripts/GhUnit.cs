@@ -2,17 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GhUnit : Unit
 {
     public int MaxHitPoints;
     public string DisplayName;
     public Color LeadingColor;
-    public HealthBar HealthBar;
+    private HealthBar HealthBar;
+
     public override void Initialize()
     {
         base.Initialize();
         transform.position += new Vector3(0, 0, -1);
+        HealthBar = GetComponentInChildren<HealthBar>();
         //GetComponent<Renderer>().material.color = LeadingColor;
     }
 
