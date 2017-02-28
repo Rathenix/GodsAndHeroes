@@ -75,9 +75,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera.cs" />
     <Compile Include="Assets\Scripts\DamageAlert.cs" />
     <Compile Include="Assets\Scripts\GhSquare.cs" />
+    <Compile Include="Assets\Scripts\GhSquareGridGenerator.cs" />
     <Compile Include="Assets\Scripts\GhUnit.cs" />
+    <Compile Include="Assets\Scripts\GhUnitGenerator.cs" />
     <Compile Include="Assets\Scripts\GuiController.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />

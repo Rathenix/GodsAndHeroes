@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GhSquare : Square {
 
+    public int unitOwner = -1;
+
     public override Vector3 GetCellDimensions()
     {
         return GetComponent<Renderer>().bounds.size;

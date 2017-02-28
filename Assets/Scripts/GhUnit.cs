@@ -94,11 +94,38 @@ public class GhUnit : Unit
         transform.position = Cell.transform.position + new Vector3(0, 0, -0.1f);
     }
 
+    //We want strict attack ranges for archers and stuff. May want to expand this to accept an array of ranges somehow
     public override bool IsUnitAttackable(Unit other, Cell sourceCell)
     {
         if (sourceCell.GetDistance(other.Cell) == AttackRange)
             return true;
 
         return false;
+    }
+
+    public override bool IsCellTraversable(Cell cell)
+    {
+        return IsCellTraversable(cell as GhSquare);
+    }
+
+    public bool IsCellTraversable(GhSquare cell)
+    {
+        return (!cell.IsTaken || cell.unitOwner == PlayerNumber);
+    }
+
+    protected override void OnDestroyed()
+    {
+        base.OnDestroyed();
+        var gh = Cell as GhSquare;
+        gh.unitOwner = -1;        
+    }
+
+    public override void Move(Cell destinationCell, List<Cell> path)
+    {
+        var gh = Cell as GhSquare;
+        gh.unitOwner = -1;
+        var ghDest = destinationCell as GhSquare;
+        ghDest.unitOwner = PlayerNumber;
+        base.Move(destinationCell, path);
     }
 }
